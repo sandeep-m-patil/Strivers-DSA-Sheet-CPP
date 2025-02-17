@@ -1,12 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-bool palindrome(int n) {
-    if(n<0)return 
-    int d = (int)log10(n);  // Computes the floor of log10(n), effectively the index of the most significant digit.
-    int l = n % 10;        // Gets the last digit of n.
-    return d == l;         // Compares the two values.
+//O(Log n) - > Best Solution: Reverse Half the Digits
+bool isPalindrome(int n) {
+    long long d = n;
+    long long  revHalf = 0;
+    if (n < 0 || (n % 10 == 0 && n != 0)) return false;
+    while (n > revHalf) {
+        revHalf = revHalf * 10 + n % 10;
+        n /= 10;
+    }
+
+    return (n == revHalf || n == revHalf / 10);
 }
+
 
 
 int main(){
