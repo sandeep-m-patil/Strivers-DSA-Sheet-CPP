@@ -21,7 +21,7 @@ int power(int base, int exp) {
     return result;
 }
 
-// Best Time Complexity is O(n²)
+// Average Time Complexity is O(n²)
 
 bool isArmstrong(int num) {
     int sum = 0, original = num;
