@@ -3,11 +3,11 @@
 
 using namespace std;
 
-// Best Time Complexity is O(n)
+// Best Time Complexity is O(n) = O(log n)
 bool isArmstrong(int num)
 {
     int sum = 0, original = num;
-    int digits = log10(num) + 1; // Count digits efficiently
+    int digits = (num == 0) ? 1 : log10(num) + 1; // Count digits efficiently
 
     while (num > 0)
     {
