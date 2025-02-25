@@ -1,26 +1,19 @@
-#include <iostream>
-#include <algorithm>  // For std::max()
+#include<bits/stdc++.h>
 using namespace std;
 
-// Best Time Complexity is O(n) [inefficient]
-int largest(int arr[], int n) {
-    int maxVal = arr[0];  // Initialize maxVal with the first element
-
-    // Loop through the array and update maxVal
-    for (int i = 1; i < n; i++) {
-        maxVal = max(maxVal, arr[i]);  // Compare and store the maximum value
-    }
-
-    return maxVal;  // Return the maximum element
+// Average Time Complexity is O(n*log n)
+int sortArr(vector<int>& arr) {
+    sort(arr.begin(),arr.end());
+    return arr[arr.size()-1];
 }
-
+ 
 int main() {
-    int a[5] = {1, 2, 3, 4, 5};
-
-    cout << "Largest element: " << largest(a, 5) << endl;  
+    vector<int> arr= {2,5,1,3,0};
+    cout << "Largest element: " << sortArr(arr) << endl; 
     /*
     Output:
     5
     */
     return 0;
 }
+

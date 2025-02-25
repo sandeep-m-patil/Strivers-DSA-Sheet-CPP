@@ -1,9 +1,8 @@
 
 #include <bits/stdc++.h>
-
 using namespace std;
 
-// Best Time Complexity is O(n^2) [inefficient]
+// Average Time Complexity is O(n^2)
 bool isSorted(int arr[], int n) {
   for (int i = 0; i < n; i++) {
     for (int j = i + 1; j < n; j++) {
@@ -21,6 +20,10 @@ int main() {
   bool ans = isSorted(arr, n);
   if (ans) cout << "True" << endl;
   else cout << "False" << endl;
+  /*
+  Output:
+  True
+  */
   return 0;
 }
 
