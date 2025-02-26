@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Function to find the missing number in the range [1, N]
+// Average time complexity: O(N^2)
 int missingNumber(vector<int>& a, int N) {
 
     // Outer loop to check for missing number from 1 to N
