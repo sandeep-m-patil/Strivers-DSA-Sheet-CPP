@@ -20,10 +20,13 @@ int main() {
   bool ans = isSorted(arr, n);
   if (ans) cout << "True" << endl;
   else cout << "False" << endl;
+  
+  return 0;
+
   /*
   Output:
   True
   */
-  return 0;
+ 
 }
 

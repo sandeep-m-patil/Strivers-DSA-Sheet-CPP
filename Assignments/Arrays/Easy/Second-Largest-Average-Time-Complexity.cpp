@@ -9,11 +9,12 @@ int sortArr(vector<int>& arr) {
  
 int main() {
     vector<int> arr= {2,5,1,3,0};
-    cout << "Largest element: " << sortArr(arr) << endl; 
+    cout << "Second Largest element: " << sortArr(arr) << endl; 
+    return 0;
+
     /*
     Output:
-    3
+    Second Largest element: 3
     */
-    return 0;
 }
 

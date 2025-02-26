@@ -29,10 +29,11 @@ int main() {
 
     cout << "Reversed Number: " << reversed << endl;
 
+    return 0;
+
     /*
     Output:
     Original Number: 329823
     Reversed Number: 328923
     */
-    return 0;
 }

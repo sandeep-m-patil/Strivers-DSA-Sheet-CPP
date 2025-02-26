@@ -27,8 +27,10 @@ int main() {
     for (int num : nums) {
         cout << num << " ";
     }
+    
+    return 0;
+
     /*Output: 
     5 6 7 1 2 3 4 
     */
-    return 0;
 }

@@ -35,11 +35,11 @@ int main()
 
     // Output the result
     cout << "Number of Digits in N: " << digits << endl;
+    return 0;
 
     /*
     Output:
     N: 329823
     Number of Digits in N: 6
     */
-    return 0;
 }

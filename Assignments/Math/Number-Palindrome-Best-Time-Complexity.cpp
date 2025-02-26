@@ -26,10 +26,12 @@ int main() {
         cout << "true";
     else 
         cout << "false";
+    
+    return 0;
+
 
     /*
     Output: false
     */
 
-    return 0;
 }

@@ -45,6 +45,7 @@ int main() {
         cout << num << " is an Armstrong number.\n";
     else
         cout << num << " is not an Armstrong number.\n";
+    return 0;
 
 
     /*
@@ -53,5 +54,4 @@ int main() {
     371 is an Armstrong number.
     */
 
-    return 0;
 }

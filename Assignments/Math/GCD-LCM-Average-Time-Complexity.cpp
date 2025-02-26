@@ -32,6 +32,7 @@ int main() {
 
     cout << "GCD of " << n1 << " and " << n2 << " is: " << gcd << endl;
     cout << "LCM of " << n1 << " and " << n2 << " is: " << (n1*n2)/gcd << endl;
+    return 0;
     
     /*
     Output : 
@@ -39,7 +40,6 @@ int main() {
     LCM of 20 and 15 is: 60
     */
     
-    return 0;
 }
                                 
                             

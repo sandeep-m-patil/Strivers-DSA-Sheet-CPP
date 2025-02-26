@@ -15,9 +15,8 @@ int main() {
         cout << k << " is Present" ;
     else
         cout << k << " is NOT Present";
-
+    return 0;
     /*Output:
     8 is Present
     */
-    return 0;
 }

@@ -43,10 +43,12 @@ int main()
     for (auto i : ans) {
         cout << i << " ";
     }
+    return 0;
+    
     /*
     Output: 
     1 2 3 2 4 5 1 0 0 0 
     */
 
-    return 0;
+
 }

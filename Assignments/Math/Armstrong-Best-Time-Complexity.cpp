@@ -29,12 +29,12 @@ int main()
         cout << num << " is an Armstrong number.\n";
     else
         cout << num << " is not an Armstrong number.\n";
-
+    return 0;
     /*
     Output:
     Enter a number: 371
     371 is an Armstrong number.
     */
 
-    return 0;
+   
 }

@@ -32,9 +32,10 @@ int main()
         cout << arr[i] << " ";
     }
 
+    return 0;
+
     /*
    Output:
    1 2 3
    */
-    return 0;
 }

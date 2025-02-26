@@ -17,9 +17,9 @@ int findLargestElement(int arr[], int n) {
 int main() {
     int a[5] = {1, 2, 3, 4, 5}; 
     cout << "Largest element: " << findLargestElement(a, 5) << endl; 
+    return 0;
     /*
     Output:
     5
     */
-    return 0;
 }

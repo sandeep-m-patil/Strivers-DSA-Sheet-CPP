@@ -1,16 +1,17 @@
 #include <iostream>
 using namespace std;
 
-//Best Time Complexity is O(log n + 1)
-int main() {
-    int n;
-    cin >> n;
+// Best Time Complexity is O(log n + 1)
+int main()
+{
+    int n = 329823;
 
     // Initialize a variable 'revNum' to store the reverse of the input integer.
     int revNum = 0;
 
     // Start a while loop to reverse the digits of the input integer.
-    while(n > 0){
+    while (n > 0)
+    {
         // Extract the last digit of 'n' using modulus operation and store it in 'ld'.
         int ld = n % 10;
 
@@ -24,7 +25,13 @@ int main() {
     }
 
     // Print the reversed number stored in 'revNum'.
-    cout << revNum;
+    cout << "Reversed Number:" << revNum;
 
     return 0;
+
+    /*
+    Output:
+    Original Number: 329823
+    Reversed Number: 328923
+    */
 }

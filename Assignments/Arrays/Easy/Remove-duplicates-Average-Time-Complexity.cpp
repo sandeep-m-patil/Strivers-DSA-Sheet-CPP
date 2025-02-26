@@ -18,10 +18,11 @@ int main()
     // Print the unique sorted elements
     for (int num : arr)cout << num << " ";
 
+    return 0;
+
     /*
     Output:
     1 2 3 4 5 
     */
 
-    return 0;
 }

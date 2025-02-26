@@ -49,10 +49,12 @@ int main() {
     }
     cout << sum;
 
+    return 0;
+
     /*
     Output:
     sum of Divisors of  12 are: 28
     */
 
-    return 0;
+    
 }

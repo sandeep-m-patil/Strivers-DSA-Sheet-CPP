@@ -20,6 +20,7 @@ int main()
     int val = search(arr,n,k);
     if(k!=-1)cout<<val;
     else cout<<"Element not found";
+    return 0;
     /*
     Output:3 ( index )
     */

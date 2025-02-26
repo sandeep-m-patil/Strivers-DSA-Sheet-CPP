@@ -31,4 +31,8 @@ int main()
     // Call the function and output the second largest element
     cout << "Second largest is " << secondLargest(arr, n);
     return 0;
+    /*
+    Output:
+    Second largest is 8
+    */
 }
