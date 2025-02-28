@@ -2,20 +2,24 @@
 using namespace std;
 
 // Average Time Complexity: O(n^3)
-int getLongestSubarray(vector<int>& a, long long k) {
+int getLongestSubarray(vector<int> &a, long long k)
+{
     int n = a.size(); // Get the size of the array
     int len = 0;      // Variable to store the maximum length
 
     // Iterate over all possible starting indices
-    for (int i = 0; i < n; i++) { 
-        
+    for (int i = 0; i < n; i++)
+    {
+
         // Iterate over all possible ending indices
-        for (int j = i; j < n; j++) { 
-            
+        for (int j = i; j < n; j++)
+        {
+
             long long s = 0; // Variable to store the sum of subarray
-            
+
             // Compute the sum of elements from index 'i' to 'j'
-            for (int p = i; p <= j; p++) {
+            for (int p = i; p <= j; p++)
+            {
                 s += a[p];
             }
 
@@ -29,14 +33,13 @@ int getLongestSubarray(vector<int>& a, long long k) {
 
 int main()
 {
-    vector<int> a = {2, 3, 5, 1, 9}; // Input array
-    long long k = 10; // Target sum
-    int len = getLongestSubarray(a, k); // Get the longest subarray length
-    cout << "The length of the longest subarray is: " << len << "\n";
+    vector<int> a = {10, 2, -2, -20, 10};
+    int k = -10;
+    cout << "Longest subarray length (both positive & negative): "
+         << longestSubarrayWithSumK(a, k) << endl;
     return 0;
-
     /*
     Output:
-    The length of the longest subarray is: 3
+    Longest subarray length (both positive & negative): 4
     */
 }
