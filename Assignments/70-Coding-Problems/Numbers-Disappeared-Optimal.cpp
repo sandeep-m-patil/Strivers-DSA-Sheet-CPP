@@ -3,24 +3,26 @@
 
 using namespace std;
 
-// Worst Time Complexity is O(n^2)
+// Best Time Complexity is O(n)
 vector<int> findDisappearedNumbers(vector<int>& nums) {
     int n = nums.size();
-    vector<int> missing_numbers;
-    
-    for (int i = 1; i <= n; i++) { // Iterate from 1 to n
-        bool found = false;
-        for (int j = 0; j < n; j++) { // Linear search in nums
-            if (nums[j] == i) {
-                found = true;
-                break;
-            }
-        }
-        if (!found) {
-            missing_numbers.push_back(i);
+
+    // Step 1: Marking phase
+    for (int i = 0; i < n; i++) {
+        int index = abs(nums[i]) - 1;  // Convert value to index
+        if (nums[index] > 0) {
+            nums[index] = -nums[index];  // Mark as visited
         }
     }
-    
+
+    // Step 2: Collect missing numbers
+    vector<int> missing_numbers;
+    for (int i = 0; i < n; i++) {
+        if (nums[i] > 0) {  // Unmarked indices correspond to missing numbers
+            missing_numbers.push_back(i + 1);
+        }
+    }
+
     return missing_numbers;
 }
 
@@ -34,6 +36,7 @@ int main() {
         cout << num << " ";
     }
     cout << endl;
+
     return 0;
 
     /*
