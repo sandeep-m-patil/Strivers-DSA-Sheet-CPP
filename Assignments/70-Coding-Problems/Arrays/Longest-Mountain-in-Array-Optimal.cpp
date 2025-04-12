@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-// Best time complexity: O(N^2)
+// Best solution: O(N) time complexity and O(1) space complexity
 int longestMountain(vector<int>& arr) {
     int n = arr.size(), maxLen = 0;
     int i = 1;

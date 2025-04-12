@@ -9,7 +9,7 @@ int maxProfit(vector<int>& prices) {
                 int profit = prices[j]-prices[i];
                 maxProfit = max(maxProfit,profit);
             }
-        }
+        } 
         return maxProfit;
 }
 
