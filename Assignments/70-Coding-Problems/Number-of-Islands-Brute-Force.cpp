@@ -3,6 +3,8 @@
 using namespace std;
 
 // Worst Time Complexity: O(M * N) where M is the number of rows and N is the number of columns in the grid
+// Space Complexity:  O(M * N) where M is the number of rows and N is the number of columns in the grid
+
 void dfs(vector<vector<char>> &grid, int i, int j)
 {
 
