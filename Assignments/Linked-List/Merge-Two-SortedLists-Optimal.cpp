@@ -63,4 +63,8 @@ int main() {
     ListNode* merged = mergeTwoListsOptimal(list1, list2);
     printList(merged);
     return 0;
+
+    // Output:
+    // Merged List : 1 1 2 3 4 4 
+
 }
