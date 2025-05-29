@@ -71,3 +71,14 @@ int main()
     Sorted array: 11 12 22 25 64
     */
 }
+
+
+/*
+
+Algorithm: Merge Sort
+
+Step 1: Divide the array into two halves.
+Step 2: Recursively sort each half.
+Step 3: Merge the two sorted halves back together.
+
+*/
