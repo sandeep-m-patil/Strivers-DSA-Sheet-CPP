@@ -1,3 +1,7 @@
 # Strivers-DSA-Sheet-CPP
-# Arrays 
-# Linked List 
+
+## Math
+## Arrays
+## Sorting
+## Linked List 
+## Stack
