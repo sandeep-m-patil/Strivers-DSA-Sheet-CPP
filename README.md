@@ -5,3 +5,5 @@
 ## Sorting
 ## Linked List 
 ## Stack
+## Queue
+## Tree
